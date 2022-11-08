@@ -9,7 +9,7 @@ int main (){
   printf("\t\t\t Are You a Member (Y/N) : ");
   scanf("%c", &choise);
   switch (choise){
-    case 'Y' || case 'y':
+    case 'y':
       printf("\n\t\t\t Masukan Jumlah Fotocopy : ");
       scanf("%i", &fotocopy);
       harga = 75;
@@ -18,7 +18,7 @@ int main (){
       sleep(3);
       main();
       break;
-    case 'N' || case 'n':
+    case 'n':
       printf("\n\t\t\t Masukan Jumlah Fotocopy : ");
       scanf("%i", &fotocopy);
       if (fotocopy < 100){
@@ -38,5 +38,6 @@ int main (){
       printf("\n\t\t\t Unregonzed Choisee !!!");
       sleep(3);
       main();
+      break;
   }
 }
